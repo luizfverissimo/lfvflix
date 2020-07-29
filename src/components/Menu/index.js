@@ -10,7 +10,7 @@ import "./Menu.css";
 function Menu() {
   return (
     <nav className="Menu">
-      <Link to="/" preventDefault >
+      <Link to="/" >
         <img className="Logo" src={logo} alt="Lfvflix logo" />
       </Link>
 
