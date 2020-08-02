@@ -1,13 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const FormFieldWrapper = styled.input`
+
+`;
+
+const Label = styled.label`
+
+`;
 
 const FormField = ({
   label, value, onChange, type, name, textArea,
 }) => {
   const fieldId = `id_${name}`;
   return (
-    <div>
-      <label htmlFor={fieldId}>
+    <FormFieldWrapper>
+      <Label htmlFor={fieldId}>
         {label}
         {textArea ? (
           <textarea
@@ -26,8 +35,8 @@ const FormField = ({
             onChange={onChange}
           />
         )}
-      </label>
-    </div>
+      </Label>
+    </FormFieldWrapper>
   );
 };
 
